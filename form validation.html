@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+function validate()
+{
+if(document.myform.Name.value=="")
+alert("U have left name as blank")
+}
+</script>
+</head>
+<body>
+<form name="myform" onsubmit="validate()">
+<input type="text" name="Name">
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
