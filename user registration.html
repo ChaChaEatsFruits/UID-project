@@ -15,19 +15,31 @@
                 <h2>User Registration</h2>
                 <div class="form">
                     <div class="inputBox">
-                        <input type="text" id="username" required>
-                        <i>Username</i>
+                        <input type="name" id="name" required >
+                        <i>Name</i>
                     </div>
                     <div class="inputBox">
                         <input type="email" id="email" required>
                         <i>Email ID</i>
                     </div>
                     <div class="inputBox">
-                        <input type="text" id="phone" required>
+                        <input type="number" id="phone" required minlength="10" maxlength="10">
                         <i>Phone Number</i>
                     </div>
                     <div class="inputBox">
+                        <input type="password" id="password" required >
+                        <i>Password</i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" id="password" required >
+                        <i>Confirm Password</i>
+                    </div>
+
+                    <div class="inputBox">
                         <input type="submit" value="Sign Up" onclick="registerUser()">
+                    </div>
+                    <div class="inputBox">
+                        <input type="button" value="Login" onclick="login()">
                     </div>
                     <div class="inputBox">
                         <input type="button" value="Back to Home" onclick="goHome()">
@@ -36,24 +48,7 @@
             </div>
         </div>
     </section>
-    <script>
-        function registerUser() {
-            let username = document.getElementById("username").value;
-            let email = document.getElementById("email").value;
-            let phone = document.getElementById("phone").value;
-            
-            if (username && email && phone) {
-                alert("Signed Up Successfully!");
-            } else {
-                alert("Please fill in all fields.");
-            }
-        }
-        
-        function goHome() {
-            alert("Going back to home");
-            window.location.href = "index.html";
-        }
-    </script>
+    
 </body>
 </html>
 

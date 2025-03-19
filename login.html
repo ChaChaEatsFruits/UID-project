@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <span></span>
+        <!-- Animated background spans -->
+        <div class="signup">
+            <div class="content">
+                <h2>User Registration</h2>
+                <div class="form">
+                    <div class="inputBox">
+                        <input type="name" id="name" required >
+                        <i>Name</i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" id="email" required>
+                        <i>Email ID</i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" id="phone" required minlength="10" maxlength="10">
+                        <i>Phone Number</i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" id="password" required>
+                        <i>Password</i>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="button" value="Log in" onclick="loginUser()">
+                    </div>
+                    <div class="inputBox">
+                        <input type="button" value="Sign Up" onclick="goSignUp()">
+                    </div>
+                    <div class="inputBox">
+                        <input type="button" value="Back to Home" onclick="goHome()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
+
