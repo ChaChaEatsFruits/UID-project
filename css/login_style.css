@@ -115,8 +115,11 @@ section .signup .content .form .inputBox i {
   pointer-events: none;
 }
 
-.incorrect .inputBox i{
+.incorrect  i{
   color: red !important;
+}
+.incorrect  input{
+  border:1px solid red !important; 
 }
 
 .signup .content .form .inputBox input:focus ~ i,

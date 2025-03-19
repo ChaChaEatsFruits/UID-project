@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/login_style.css">
+    <script src="javascript/script.js" defer></script>
+    <script src="javascript/validate.js" defer></script>
 </head>
 <body>
     <section>
@@ -14,38 +15,41 @@
         <div class="signup">
             <div class="content">
                 <h2>Register</h2>
-                <div class="form">
-                    <div class="inputBox">
-                        <input type="name" id="name" required >
-                        <i>Name</i>
+                <form class="form" id="loginForm">
+                    <div class="form">
+                        <div class="inputBox">
+                            <input type="name" id="name" required >
+                            <i>Name</i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" id="email" required>
+                            <i>Email ID</i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="tel" id="phone" required minlength="10" maxlength="10">
+                            <i>Phone Number</i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" id="password" required >
+                            <i>Password</i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" id="confirm_password" required >
+                            <i>Confirm Password</i>
+                        </div>
+    
+                        <div class="inputBox">
+                            <input type="submit" value="Sign Up" onclick="registerUser()">
+                        </div>
+                        <div class="inputBox">
+                            <input type="button" value="Login" onclick="goLogin()">
+                        </div>
+                        <div class="inputBox">
+                            <input type="button" id="goHome" value="Back to Home" onclick="goHome()">
+                        </div>
                     </div>
-                    <div class="inputBox">
-                        <input type="email" id="email" required>
-                        <i>Email ID</i>
-                    </div>
-                    <div class="inputBox">
-                        <input type="tel" id="phone" required minlength="10" maxlength="10">
-                        <i>Phone Number</i>
-                    </div>
-                    <div class="inputBox">
-                        <input type="password" id="password" required >
-                        <i>Password</i>
-                    </div>
-                    <div class="inputBox">
-                        <input type="password" id="confirm_password" required >
-                        <i>Confirm Password</i>
-                    </div>
-
-                    <div class="inputBox">
-                        <input type="submit" value="Sign Up" onclick="registerUser()">
-                    </div>
-                    <div class="inputBox">
-                        <input type="button" value="Login" onclick="goLogin()">
-                    </div>
-                    <div class="inputBox">
-                        <input type="button" id="goHome" value="Back to Home" onclick="goHome()">
-                    </div>
-                </div>
+                </form>
+                
             </div>
         </div>
     </section>

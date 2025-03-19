@@ -23,3 +23,7 @@ function goRegister(){
     alert("Going to SignUp page");
     window.location.href="registration.html";
 }
+function checkLogin(){
+    const email=document.getElementById("email").value;
+    const password=document.getElementById("password").value;
+}
