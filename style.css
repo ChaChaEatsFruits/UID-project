@@ -103,6 +103,8 @@ section .signup .content .form .inputBox input {
   font-size: 1em;
 }
 
+
+
 section .signup .content .form .inputBox i {
   position: absolute;
   left: 0;
@@ -111,6 +113,10 @@ section .signup .content .form .inputBox i {
   color: #aaa;
   transition: 0.5s;
   pointer-events: none;
+}
+
+.incorrect .inputBox i{
+  color: red !important;
 }
 
 .signup .content .form .inputBox input:focus ~ i,
@@ -129,16 +135,23 @@ section .signup .content .form .inputBox i {
   letter-spacing: 0.05em;
   cursor: pointer;
   transition: 0.3s;
+  border-radius: 100px;
+  text-transform: uppercase;
 }
 .signup .content .form .inputBox input[type="button"] {
   padding: 10px;
-  background: purple;
+  background: #0f0;
   color: #000;
   font-weight: 600;
   font-size: 1.35em;
   letter-spacing: 0.05em;
   cursor: pointer;
   transition: 0.3s;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+#goHome{
+  background-color: cyan;
 }
 
 .signup .content .form .inputBox input[type="submit"]:hover {
