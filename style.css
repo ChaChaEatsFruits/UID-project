@@ -130,6 +130,16 @@ section .signup .content .form .inputBox i {
   cursor: pointer;
   transition: 0.3s;
 }
+.signup .content .form .inputBox input[type="button"] {
+  padding: 10px;
+  background: purple;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
 .signup .content .form .inputBox input[type="submit"]:hover {
   box-shadow: 0 0 10px #0f0;
