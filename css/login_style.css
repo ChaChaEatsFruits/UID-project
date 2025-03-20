@@ -116,8 +116,10 @@ section .signin .content .form .inputBox input
   font-weight: 500;
   font-size: 1em;
 }
-section .signin .content .form .inputBox i 
-{
+
+
+
+section .signup .content .form .inputBox i {
   position: absolute;
   left: 0;
   padding: 15px 10px;
@@ -126,9 +128,16 @@ section .signin .content .form .inputBox i
   transition: 0.5s;
   pointer-events: none;
 }
-.signin .content .form .inputBox input:focus ~ i,
-.signin .content .form .inputBox input:valid ~ i
-{
+
+.incorrect  i{
+  color: red !important;
+}
+.incorrect  input{
+  border:1px solid red !important; 
+}
+
+.signup .content .form .inputBox input:focus ~ i,
+.signup .content .form .inputBox input:valid ~ i {
   transform: translateY(-7.5px);
   font-size: 0.8em;
   color: #fff;
@@ -159,10 +168,24 @@ section .signin .content .form .inputBox i
   font-size: 1.35em;
   letter-spacing: 0.05em;
   cursor: pointer;
+  transition: 0.3s;
+  border-radius: 100px;
+  text-transform: uppercase;
 }
-input[type="submit"]:active
-{
-  opacity: 0.6;
+.signup .content .form .inputBox input[type="button"] {
+  padding: 10px;
+  background: #0f0;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+#goHome{
+  background-color: cyan;
 }
 @media (max-width: 900px)
 {
