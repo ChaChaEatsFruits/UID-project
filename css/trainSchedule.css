@@ -11,18 +11,18 @@ form{
     display: flex;
     height:70px;
     margin-top: 0px;
-    justify-content: center;
+    padding-left:40px;
     align-items: center;
-    background-color: white;
+    background:white;
     border-bottom: 1px solid grey;
 }
 .header img{
     height:30px;
-    margin:5px 60px 0px 60px;
+    margin:5px 100px 0px 100px;
 }
 .header input{
     height:30px;
-    width:200px;
+    width:300px;
     font-size: 18px;
     padding: 10px 8px 2px 8px;
     border:2px solid grey;
@@ -38,6 +38,22 @@ form{
     left:10px;
     font-size:12px;
     font-weight: 700;
+}
+.input-container{
+    display: flex;
+    justify-content: end;
+}
+
+.search-button{
+    width:170px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-left:40px;
+    height:40px;
+    background: linear-gradient(royalblue,steelblue);
+    border-radius: 5px;
+    color:aliceblue;
+    border:none;
 }
 
 
