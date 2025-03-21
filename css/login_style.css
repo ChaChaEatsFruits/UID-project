@@ -8,11 +8,11 @@
 }
 
 body {
-  display: flex;
+  
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #000;
+  background: white;
 }
 
 section {
@@ -32,26 +32,23 @@ section::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#000,#0f0,#000);
-  animation: animate 5s linear infinite;
+  background: linear-gradient(aliceblue,skyblue,aliceblue);
+  /* animation: animate 5s linear infinite; */
 }
 
-@keyframes animate {
+/* @keyframes animate {
   0% { transform: translateY(-100%); }
   100% { transform: translateY(100%); }
-}
+} */
 
 
 
-section span:hover {
-  background: #0f0;
-  transition: 0s;
-}
+
 
 section .signup {
   position: relative;
   width: 400px;
-  background: #222;  
+  background: aliceblue;  
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -74,7 +71,7 @@ section .signup .content {
 
 section .signup .content h2 {
   font-size: 2em;
-  color: #0f0;
+  color: royalblue;
   text-transform: uppercase;
 }
 
@@ -93,12 +90,12 @@ section .signup .content .form .inputBox {
 section .signup .content .form .inputBox input {
   position: relative;
   width: 100%;
-  background: #333;
+  background: lightgrey;
   border: none;
   outline: none;
   padding: 25px 10px 7.5px;
   border-radius: 4px;
-  color: #fff;
+  color: black;
   font-weight: 500;
   font-size: 1em;
 }
@@ -110,7 +107,7 @@ section .signup .content .form .inputBox i {
   left: 0;
   padding: 15px 10px;
   font-style: normal;
-  color: #aaa;
+  color: black;
   transition: 0.5s;
   pointer-events: none;
 }
@@ -126,12 +123,12 @@ section .signup .content .form .inputBox i {
 .signup .content .form .inputBox input:valid ~ i {
   transform: translateY(-7.5px);
   font-size: 0.8em;
-  color: #fff;
+  color: black;
 }
 
 .signup .content .form .inputBox input[type="submit"] {
   padding: 10px;
-  background: #0f0;
+  background: royalblue;
   color: #000;
   font-weight: 600;
   font-size: 1.35em;
@@ -143,7 +140,7 @@ section .signup .content .form .inputBox i {
 }
 .signup .content .form .inputBox input[type="button"] {
   padding: 10px;
-  background: #0f0;
+  background: royalblue;
   color: #000;
   font-weight: 600;
   font-size: 1.35em;
@@ -154,7 +151,7 @@ section .signup .content .form .inputBox i {
   text-transform: uppercase;
 }
 #goHome{
-  background-color: cyan;
+  background-color: skyblue;
 }
 
 .signup .content .form .inputBox input[type="submit"]:hover {
