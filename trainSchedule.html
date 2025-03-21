@@ -4,63 +4,661 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train Ticket Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/trainSchedule.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
-
-<div class="train-card">
-    <!-- Train Header -->
-    <div class="train-header">
-        <div class="train-name">
-            <h2>Shram Shkti Exp</h2>
-            <span>#12452 | Depart on: <span class="days">SMTWTFS</span></span>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img class="logo" src="images/train-logo.jpg" alt="">
         </div>
-        <div class="train-timing">
-            <strong>11:55 PM, 20 MAR</strong>
-            <span>New Delhi</span>
+        <div class="icon-container">
+            <div class="icon">
+                <img src="images/home.png" alt=""><br>
+                <span>Home</span>
+            </div>
+            <div class="icon">
+                <img src="images/suitcase-alt.png" alt=""><br>
+                <span>My Bookings</span>
+            </div>
+            <div class="icon">
+                <img src="images/train.png" alt=""><br>
+                <span>Train Schedule</span>
+            </div>
+            <div class="icon">
+                <img src="images/user.png" alt=""><br>
+                <span>Profile</span>
+            </div>
+            <div class="icon">
+                <img src="images/feedback-review.png" alt=""><br>
+                <span>Feedback</span>
+            </div>
+            
         </div>
-        <div class="train-duration">
-            <span>6h 25m</span>
-            <a href="#">View Route</a>
-        </div>
-        <div class="train-arrival">
-            <strong>6:20 AM, 21 MAR</strong>
-            <span>Kanpur Central</span>
-        </div>  
+        
+    </nav>
+    <div class="header">
+        <form action="">
+            <div class="header">
+                <div>
+                    <input type="text" class="from">
+                    <div class="input-desc">FROM CITY</div>
+                </div>
+                <div>
+                    <img src="images/arrow-circle-right.png" alt="">
+                </div>
+            
+                <div>
+                    <input type="text" class="to">
+                    <div class="input-desc">TO CITY</div>
+                </div>
+            </div>
+        </form>
     </div>
 
-    <!-- Ticket Availability -->
-    <div class="ticket-info">
-        <div class="ticket">
-            <span class="class">3A <span class="tatkal">TATKAL</span></span>
-            <strong>₹ 1090</strong>
-            <p>Available <span class="available">30</span></p>
-            <small>Free Cancellation</small>
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Shram Shkti Express</h2>
+                <span>#12452 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>11:55PM, 20 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>6h 25m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:20AM, 21 MAR</strong><br>
+                    <span>Patna</span>
+                </div>
+            </div>
+            
         </div>
-        <div class="ticket">
-            <span class="class">2A <span class="tatkal">TATKAL</span></span>
-            <strong>₹ 1505</strong>
-            <p>Available <span class="available">2</span></p>
-            <small>Free Cancellation</small>
+
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
         </div>
-        <div class="ticket">
-            <span class="class">3E <span class="tatkal">TATKAL</span></span>
-            <strong>₹ 1035</strong>
-            <p>Available <span class="available">88</span></p>
-            <small>Free Cancellation</small>
-        </div>
-        <div class="ticket waitlist">
-            <span class="class">SL <span class="tatkal">TATKAL</span></span>
-            <strong>TQWL 4</strong>
-            <p>Free Cancellation</p>
-        </div>
+
     </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <a href="#">Nearby Dates ⬇</a>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Shram Shkti Express</h2>
+                <span>#12452 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>11:55PM, 20 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>6h 25m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:20AM, 21 MAR</strong><br>
+                    <span>Patna</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+
     </div>
-</div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Shram Shkti Express</h2>
+                <span>#12452 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>11:55PM, 20 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>6h 25m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:20AM, 21 MAR</strong><br>
+                    <span>Patna</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Shram Shkti Express</h2>
+                <span>#12452 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>11:55PM, 20 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>6h 25m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:20AM, 21 MAR</strong><br>
+                    <span>Patna</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Shram Shkti Express</h2>
+                <span>#12452 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>11:55PM, 20 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>6h 25m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:20AM, 21 MAR</strong><br>
+                    <span>Patna</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Shram Shkti Express</h2>
+                <span>#12452 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>11:55PM, 20 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>6h 25m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:20AM, 21 MAR</strong><br>
+                    <span>Patna</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Shram Shkti Express</h2>
+                <span>#12452 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>11:55PM, 20 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>6h 25m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:20AM, 21 MAR</strong><br>
+                    <span>Patna</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Shram Shkti Express</h2>
+                <span>#12452 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>11:55PM, 20 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>6h 25m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:20AM, 21 MAR</strong><br>
+                    <span>Patna</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>

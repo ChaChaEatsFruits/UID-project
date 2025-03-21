@@ -1,103 +1,138 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+body{
+    font-family:Lato;
+    background-color: rgb(232, 232, 232);
+    margin:0;
+}
+form{
+    margin:0;
+    padding:0;
+}
+.header{
     display: flex;
+    height:70px;
+    margin-top: 0px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    background-color: white;
+    border-bottom: 1px solid grey;
 }
-
-.train-card {
-    width: 700px;
-    background: white;
+.header img{
+    height:30px;
+    margin:5px 60px 0px 60px;
+}
+.header input{
+    height:30px;
+    width:200px;
+    font-size: 18px;
+    padding: 10px 8px 2px 8px;
+    border:2px solid grey;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+}
+.header div{
+    position:relative;
+    margin-top:1px
+}
+.header div .input-desc{
+    position:absolute;
+    top:1px;
+    left:10px;
+    font-size:12px;
+    font-weight: 700;
 }
 
-/* Header */
-.train-header {
+
+.train-card{
+    box-shadow: inset 3px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    padding:10px;
+    width:900px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left:20px;
+}
+.train-info{
     display: flex;
+    justify-content:center;
+    align-items:center;
+    width:900px;
+}
+.train-timing-details{
+    margin-top:20px;
+    display: flex;
+    flex:1;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
+    margin-left: 50px;
 }
-
-.train-name h2 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.train-name span {
-    font-size: 12px;
-    color: gray;
-}
-
-.train-timing,
-.train-arrival {
-    font-size: 14px;
+.train-destination{
+    width:200px;
     text-align: center;
 }
-
-.train-duration {
+.train-duration{
+    flex:1;
     text-align: center;
+    color:rgb(104, 103, 103)
+}
+.train-duration a{
+    text-decoration:none;
+    color:royalblue
 }
 
-.train-duration a {
-    font-size: 12px;
-    color: blue;
-    text-decoration: none;
+.ticket-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    margin-top: 20px;
+    column-gap: 20px;
 }
 
-/* Ticket Availability */
-.ticket-info {
+.ticket-card{
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding:10px
+}
+.ticket-card div{
+    margin-bottom:10px;
+}
+.ticket-card .available{
+    color:darkgreen;
+    font-weight:700;
+}
+.ticket-card .cancel{
+    font-size:14px;
+    color:darkgrey;
+}
+.ticket-heading{
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    font-weight: 900;
+}
+.ticket-heading .tatkal{
+    margin-left:5px;
+    font-size:14px;
+    border:1px solid lightyellow;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: lightyellow;
+    color:darkgoldenrod
 }
 
-.ticket {
-    width: 23%;
-    background: #f7f7f7;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
+.train-title{
+    font-weight: 900;
+    margin-bottom:0px
 }
-
-.ticket strong {
-    font-size: 16px;
-    display: block;
-    margin: 5px 0;
-}
-
-.ticket p {
-    color: green;
-    font-weight: bold;
-}
-
-.waitlist p {
-    color: red;
-    font-weight: bold;
-}
-
-.tatkal {
-    background: #f7d9ae;
-    color: #8a5100;
-    font-size: 10px;
-    padding: 2px 5px;
-    border-radius: 4px;
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.footer a {
-    color: blue;
-    text-decoration: none;
+.train-name span{
+    color:grey;
     font-size: 14px;
+}
+.train-name span .train-schedule{
+    font-weight:900;
+    color: darkgreen;
+}
+.line{
+    border:1px solid grey;
+    height:1px;
+    width:30px;
+    background-color: grey;
+    border-radius:5px
 }
