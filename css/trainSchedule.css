@@ -44,13 +44,14 @@ form{
     justify-content: end;
 }
 
-.search-button{
-    width:170px;
-    font-size: 22px;
+.header .search-button{
+    width:150px;
+    font-size: 20px;
     font-weight: 700;
     margin-left:40px;
+    padding:10px;
     height:40px;
-    background: linear-gradient(royalblue,steelblue);
+    background: linear-gradient(90deg, rgb(34, 26, 179) 0%, rgb(59, 59, 244) 35%, rgba(0,212,255,1) 100%);
     border-radius: 5px;
     color:aliceblue;
     border:none;
