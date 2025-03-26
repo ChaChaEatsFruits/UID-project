@@ -69,7 +69,7 @@ form{
     border:none;
 }
 
-.header .search-button:hover{
+.header .search-button:hover ,.header input:hover{
     cursor:pointer;
     outline: auto;
 }
