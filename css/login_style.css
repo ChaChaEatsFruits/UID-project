@@ -17,7 +17,7 @@ body {
 
 section {
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -25,6 +25,7 @@ section {
   gap: 2px;
   flex-wrap: wrap;
   overflow: hidden;
+  padding-top: 80px; /* this creates space for the fixed header */
 }
 
 section::before {

@@ -2,13 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/subway.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/login_style.css">
     <script src="javascript/script.js" defer></script>
     <script src="javascript/validate.js" defer></script>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+          <h2 class="logo"><a href="home.html">ExpressRail.</a></h2>
+          <input type="checkbox" id="menu-toggler">
+          <label for="menu-toggler" id="hamburger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+          </label>
+          <ul class="all-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Book Tickets</a></li>
+            <li><a href="#">Train Timings</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="login.html">Sign In</a></li>
+            <li class="join-btn"><a href="registration.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </header>
     <section>
         <!-- Animated background spans -->
         <div class="signup">
@@ -34,7 +57,7 @@
                             <input type="button" value="Sign Up" onclick="goRegister()">
                         </div>
                         <div class="inputBox">
-                            <input type="button" id="goHome" value="Back to Home" onclick="goHome()">
+                            <input type="button" id="goHome" value="Back to Home" onclick="goIndex()">
                         </div>
                     </div>
                 </form>

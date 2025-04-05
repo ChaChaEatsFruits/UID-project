@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: url('../images/trainbg1.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-attachment: fixed;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.wrapper{
+    padding: 2rem;
+    width:100%;
+    text-align: center;
+    background-color: rgb(232, 232, 232);
+    max-width: 576px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+}
+.wrapper h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap:.5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color:gold
+}
+.rating .star{
+    cursor: pointer;
+}
+.rating .star.active {
+    opacity: 0;
+    animation: animate 0.5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.rating .star:hover{
+    transform: scale(1.1);
+}
+span{
+    margin-bottom: 30px;
+}
+input,textarea{
+    width:100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border:none;
+    outline:none;
+    margin-bottom: 1rem;
+    resize: none;
+    background-color: rgb(223, 223, 223);
+}
+.btn-group{
+    display: flex;
+    grid-gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+.btn-group .btn{
+    padding:.75rem 1rem;
+    border-radius: .75rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+}
+.btn-group .btn:hover{
+    transform: scale(1.05);
+}
+.btn-group .btn.submit{
+    background-color: royalblue;
+    color: azure;
+}
+.btn-group .btn.cancel{
+    color: royalblue;
+    background-color: azure;
+}
