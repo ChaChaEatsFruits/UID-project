@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="bookingPage.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <h2 class="logo"><a href="file:///Users/anagha_g/Desktop/demo/home.html">ExpressRail.</a></h2> 
+          <input type="checkbox" id="menu-toggler">
+          <label for="menu-toggler" id="hamburger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+          </label>
+          <ul class="all-links">
+            <li><a href="#">Profile</a></li>
+            <li><a href="BookTickets.html">Book Tickets</a></li>
+            <li><a href="#">Train Timings</a></li>
+            <li><a href="file:///Users/anagha_g/Desktop/FINAL/home.html#contact">Contact Us</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li class="join-btn"><a href="#">Sign Up</a></li>
+          </ul>
+        </nav>
+      </header>
+    <section class="confirmation-section">
+        <div class="details-container">
+            <h2>Booking Details</h2>
+            <p><strong>From:</strong> <span id="confirm-from"></span></p>
+            <p><strong>To:</strong> <span id="confirm-to"></span></p>
+            <p><strong>Email:</strong> <span id="confirm-email"></span></p>
+            <p><strong>Date of Journey:</strong> <span id="confirm-date"></span></p>
+            <p><strong>Class:</strong> <span id="confirm-class"></span></p>
+        </div>
+        <button class="button" onclick="window.history.back();">Go Back</button>
+    </section>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById("confirm-from").innerText = params.get("from") || "N/A";
+            document.getElementById("confirm-to").innerText = params.get("to") || "N/A";
+            document.getElementById("confirm-email").innerText = params.get("email") || "N/A";
+            document.getElementById("confirm-date").innerText = params.get("date") || "N/A";
+            document.getElementById("confirm-class").innerText = params.get("classType") || "N/A";
+        });
+    </script>
+</body>
+</html>
