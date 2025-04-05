@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="file:///Users/anagha_g/Desktop/demo/home.html">ExpressRail.</a></h2> <!--ADD HOME PAGE HREF HERE-->
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Book Tickets</a></li>
+          <li><a href="#">Train Timings</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#">Sign In</a></li>
+          <li class="join-btn"><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="search-section">
+          <h1>Book Your Train Tickets</h1>
+          <form id="search-form">
+            <input type="text" name="from" placeholder="From" required>
+            <input type="text" name="to" placeholder="To" required>
+            <input type="date" name="date" placeholder="Date" required>
+            <button type="submit">SEARCH</button>
+          </form>
+        </section>
+        <section class="results-section" id="results-section">  <!--Sample data displayed-->
+        </section>
+        <script src="sampleData.js"></script>
+    </main>
