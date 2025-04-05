@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #f2f2f2;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #456073;
+}
+.navbar {
+  display: flex;
+  padding: 0 10px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar input#menu-toggler {
+  display: none;
+}
+.navbar #hamburger-btn {
+  cursor: pointer;
+  display: none;
+}
+.navbar .all-links {
+  display: flex;
+  align-items: center;
+}
+.navbar .all-links li {
+  position: relative;
+  list-style: none;
+}
+.navbar .logo a {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+header a, footer a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    padding: 20px 0;
+    display: inline-block;
+}
+header a:hover, footer a:hover {
+    color: #FD384C;
+}
+.navbar .all-links .join-btn a {
+      border: 1px solid #fff;
+      padding: 8px 15px;
+      border-radius: 4px;
+}
+.navbar .all-links .join-btn a:hover {
+      color: #fff;
+      border-color: transparent;
+      background: #FD384C;
+}
+.search-section {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+    background: url(banner2.jpg);
+    background-size: cover;
+}
+
+.search-section h1 {
+    margin-bottom: 1rem;
+    color: #f2f2f2;
+}
+
+.search-section form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.search-section form input,
+.search-section form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.search-section form button:hover {
+    background-color: #FD384C;
+    color: #f2f2f2;
+    border: transparent;
+}
+.results-section {
+    padding: 2rem;
+    background-color: #fff;
+
+}
+
+.train-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.train-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.train-info h2 {
+    margin: 0;
+}
+
+.train-info p {
+    margin: 0.5rem 0 0 0;
+    color: #666;
+}
+
+.book-button {
+    background-color: #456073;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-button:hover {
+    background-color: #FD384C;
+
+}
+
+.content {
+    flex: 1;
+}
+@media (max-width:600px) {
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+    #search-form{
+        display: inline;
+    }
+    #search-form input{
+        width: 100%;
+    }
+    #search-form button{
+        margin: 10px;
+        border-radius: 14px;
+        background-color: #FD384C;
+        color: white;
+        height: 50px;
+        width: 140px;
+    }
+}
