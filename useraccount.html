@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input.error {
+            border-color: red;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #be0c24;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .current-details {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Account Management</h2>
+        <div class="current-details">
+            <p><strong>Current Username:</strong> <span id="current username">admin123</span></p>
+            <p><strong>Current Email:</strong> <span id="current email">admin@example.com</span></p>
+            <p><strong>Current password:</strong> <span id="current password">Admin123</span></p>
+        </div>
+        <input type="text" id="username" placeholder="Add new username">
+        <input type="email" id="email" placeholder="Add new email">
+        <input type="password" id="password" placeholder="Add new password">
+        <button onclick="updateAccount()">Update Account</button>
+        <input type="button" ahref="home.html" value="Home">
+        <p id="message"></p>
+    </div>
+    <script>
+        function updateAccount() {
+            let username = document.getElementById("username");
+            let email = document.getElementById("email");
+            let password = document.getElementById("password");
+            let message = document.getElementById("message");
+            
+            let usernameValue = username.value.trim();
+            let emailValue = email.value.trim();
+            let passwordValue = password.value.trim();
+            
+            username.classList.remove("error");
+            email.classList.remove("error");
+            password.classList.remove("error");
+            
+            if (!usernameValue || !emailValue || !passwordValue) {
+                message.innerText = "Please fill in all fields.";
+                message.style.color = "red";
+                if (!usernameValue) username.classList.add("error");
+                if (!emailValue) email.classList.add("error");
+                if (!passwordValue) password.classList.add("error");
+                return;
+            }
+            
+            let passwordPattern = /^(?=.*[A-Z])(?=.*\d).+$/;
+            if (!passwordPattern.test(passwordValue)) {
+                alert("Password must contain at least one uppercase letter and one number.");
+                password.classList.add("error");
+                return;
+            }
+            
+            let confirmation = confirm("Are you sure you want to update your details?");
+            if (confirmation) {
+                document.getElementById("current-username").innerText = usernameValue;
+                document.getElementById("current-email").innerText = emailValue;
+                message.innerText = "Account updated successfully!";
+                message.style.color = "green";
+            }
+        }
+    </script>
+</body>
+</html>
