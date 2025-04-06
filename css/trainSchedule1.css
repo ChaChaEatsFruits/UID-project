@@ -1,15 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-html {
-    scroll-behavior: smooth;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
 body{
-    font-family:"Poppins";
+    font-family:Lato;
     background-color: rgb(232, 232, 232);
     margin:0;
 }
@@ -25,8 +15,8 @@ form{
     display: flex;
     padding:10px 20px;
     height:auto;
-    justify-content: center;
-    margin-top: 40px;
+    justify-content: space-between;
+    margin-top: 60px;
     align-items: center;
     background:white;
 }
@@ -36,11 +26,11 @@ form{
     margin-right: 15px;
 }
 .header input{
-    height:45px;
+    height:30px;
     width:100%;
     min-width:150px;
-    font-size: 16px;
-    padding: 20px 8px 10px 8px;
+    font-size: 18px;
+    padding: 10px 8px 2px 8px;
     border:1px solid grey;
     border-radius: 5px;
     background-color: rgb(239, 239, 239);
@@ -66,38 +56,30 @@ form{
     flex:1;
 }
 
-.header div .search-button{
+.header .search-button{
     max-width:150px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     margin-left:40px;
-    padding:10px 5px 10px;
-    height:45px;
+    padding:10px;
+    height:40px;
     background: linear-gradient(90deg, rgb(34, 26, 179) 0%, rgb(59, 59, 244) 35%, rgba(0,212,255,1) 100%);
     border-radius: 5px;
     color:aliceblue;
     border:none;
 }
 
-.header .search-button:hover {
-    cursor:pointer; 
+.header .search-button:hover ,.header input:hover{
+    cursor:pointer;
     outline: auto;
-}
-.header input:hover{
-    cursor: pointer;
-    outline:none
 }
 
 @media (max-width: 768px) { /* Tablets & Small Devices */
-    
     .header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 15px;
-    }
-    .header-container{
-        justify-content: center;
     }
     .input-container{
         text-align: center;
@@ -107,11 +89,10 @@ form{
     }
     .header input {
         width:100%;
-        height: 45px;
+        height: 25px;
         min-width: 150px;
         font-size: 14px;
-        padding: 6px;
-        padding-bottom: 0;
+        padding: 8px;
     }
     .header img{
         display:none;
@@ -126,18 +107,12 @@ form{
         text-align: center;
     }
 }
-.results-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 .train-card{
     box-shadow: 3px 4px 5px rgba(0,0,0,0.15);
     border-radius: 10px;
     padding:10px;
-    padding-left: 20px;
-    max-width: 900px;
+    width:900px;
     background-color: white;
     margin-top: 20px;
     margin-left:20px;
@@ -147,7 +122,7 @@ form{
     display: flex;
     justify-content:center;
     align-items:center;
-    margin-bottom: 15px;
+    width:900px;
 }
 .train-timing-details{
     margin-top:20px;
@@ -179,17 +154,40 @@ form{
     column-gap: 20px;
 }
 
-.available-container{
-    display: block;
+.ticket-card{
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding:10px
 }
-
-.available{
+.ticket-card:hover{
+    cursor:pointer;
+    background-color: rgb(242, 241, 241);
+}
+.ticket-card div{
+    margin-bottom:10px;
+}
+.ticket-card .available{
     color:darkgreen;
     font-weight:700;
 }
-
-
-
+.ticket-card .cancel{
+    font-size:14px;
+    color:darkgrey;
+}
+.ticket-heading{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+}
+.ticket-heading .tatkal{
+    margin-left:5px;
+    font-size:14px;
+    border:1px solid lightyellow;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: lightyellow;
+    color:darkgoldenrod
+}
 
 .train-title{
     font-weight: 900;

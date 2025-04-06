@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/trainSchedule.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="javascript/trainSearch.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <h2 class="logo"><a href="home.html">ExpressRail.</a></h2>
+          <input type="checkbox" id="menu-toggler">
+          <label for="menu-toggler" id="hamburger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+          </label>
+          <ul class="all-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Book Tickets</a></li>
+            <li><a href="#">Train Timings</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="login.html">Sign In</a></li>
+            <li class="join-btn"><a href="registration.html">Sign Up</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="header-container">
+        <form action="" id="search-form">
+            <div class="header">
+                <div class="input-container">
+                    <div><input type="text" class="from" id="from-city"></div>
+                    
+                    <div class="input-desc">FROM CITY</div>
+                </div>
+                <div>
+                    <img src="images/arrow-circle-right.png" alt="">
+                </div>
+            
+                <div class="input-container">
+                    <div><input type="text" class="to" id="to-city"></div>
+                    
+                    <div class="input-desc">TO CITY</div>
+                </div>
+                <div>
+                    <input type="submit" class="search-button" value="SEARCH">
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Shram Shkti Express</h2>
+                <span>#12452 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>11:55PM, 20 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>6h 25m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:20AM, 21 MAR</strong><br>
+                    <span>Kolkata</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Bangalore Express</h2>
+                <span>#12649 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>10:30PM, 20 MAR</strong><br>
+                    <span>Mumbai</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>14h 50m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>1:20PM, 21 MAR</strong><br>
+                    <span>Bengaluru</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Chennai Mail</h2>
+                <span>#12840 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>9:15AM, 22 MAR</strong><br>
+                    <span>Kolkata</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>20h 30m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>5:45AM, 23 MAR</strong><br>
+                    <span class="">Chennai</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Delhi Rajdhani</h2>
+                <span>#12951 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>5:45PM, 18 MAR</strong><br>
+                    <span>Mumbai</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>15h 30m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>9:15AM, 19 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Cbe Ltt Exp</h2>
+                <span>#11014 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>3:15PM, 18 MAR</strong><br>
+                    <span>Bengaluru</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>22h 40m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>1:55AM, 19 MAR</strong><br>
+                    <span>Kolkata</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 665</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 520</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1790</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1385</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Udyan Express</h2>
+                <span>#11351 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>8:40PM, 18 MAR</strong><br>
+                    <span>Kolkata</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>23h 35m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>8:15AM, 19 MAR</strong><br>
+                    <span>Mumbai</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 690</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 530</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1595</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1490</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Jodhpur Exp</h2>
+                <span>#12951 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>5:15PM, 18 MAR</strong><br>
+                    <span>Bengaluru</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>25h 25m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:40PM, 19 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1725</strong>
+                </div>
+                <div>
+                    <span class="available">Available 50</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">2A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1565</strong>
+                </div>
+                <div>
+                    <span class="available">Available 10</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 990</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Ak Tejas Raj Exp</h2>
+                <span>#12951 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>5:10PM, 18 MAR</strong><br>
+                    <span>Chennai</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>15h 30m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>9:15AM, 19 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 2090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">2A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1560</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">1A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1340</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">SLP <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 990</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Ndls Tejas Raj</h2>
+                <span>#12951 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>5:00PM, 18 MAR</strong><br>
+                    <span>Kolkata</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>15h 32m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>8:32AM, 19 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Jodhpur Exp</h2>
+                <span>#12951 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>5:15PM, 18 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>25h 25m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:40PM, 19 MAR</strong><br>
+                    <span>Bengaluru</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1725</strong>
+                </div>
+                <div>
+                    <span class="available">Available 50</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">2A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1565</strong>
+                </div>
+                <div>
+                    <span class="available">Available 10</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 990</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Delhi Rajdhani</h2>
+                <span>#12951 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>5:45PM, 18 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>15h 30m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>9:15AM, 19 MAR</strong><br>
+                    <span>Mumbai</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Dee Gareebrath</h2>
+                <span>#12951 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>5:00PM, 18 MAR</strong><br>
+                    <span>New Delhi</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>15h 32m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>8:32AM, 19 MAR</strong><br>
+                    <span>Chennai</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Nzm Rajdhani</h2>
+                <span>#25671 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>5:30PM, 18 MAR</strong><br>
+                    <span>Bengaluru</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>16h 45m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>10:15AM, 19 MAR</strong><br>
+                    <span>Chennai</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 2615</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 2030</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1590</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Bdts Smprk K Ex</h2>
+                <span>#25671 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>5:30PM, 18 MAR</strong><br>
+                    <span>Kolkata</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>16h 45m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>10:15AM, 19 MAR</strong><br>
+                    <span>Bengaluru</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 2615</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 2030</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1590</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Bangalore Express</h2>
+                <span>#12649 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>10:30PM, 20 MAR</strong><br>
+                    <span>Bengaluru</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>14h 50m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>1:20PM, 21 MAR</strong><br>
+                    <span>Mumbai</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Sampark Kranthi</h2>
+                <span>#25571 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>11:00AM, 18 MAR</strong><br>
+                    <span>Mumbai</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>19h 10m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:10PM, 19 MAR</strong><br>
+                    <span>Chennai</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1615</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1430</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1280</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Darshan Express</h2>
+                <span>#25671 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>5:30PM, 18 MAR</strong><br>
+                    <span>Chennai</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>16h 45m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>10:15AM, 19 MAR</strong><br>
+                    <span>Kolkata</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 2615</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 2030</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1590</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Nzm Rajdhani</h2>
+                <span>#25671 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>5:30PM, 18 MAR</strong><br>
+                    <span>Chennai</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>16h 45m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>10:15AM, 19 MAR</strong><br>
+                    <span>Bengaluru</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 2615</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 2030</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1590</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Swaraj Express</h2>
+                <span>#25671 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>11:00PM, 18 MAR</strong><br>
+                    <span>Mumbai</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>18h 25m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>5:25PM, 19 MAR</strong><br>
+                    <span>Kolkata</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 2615</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 2030</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1590</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="train-card">
+        <div class="train-info">
+            <div class="train-name">
+                <h2 class="train-title">Sampark Kranthi</h2>
+                <span>#25571 | Depart on: <span class="train-schedule">S M T W T F S</span></span>
+            </div>
+            <div class="train-timing-details">
+                <div class="train-destination">
+                    <strong>11:00AM, 18 MAR</strong><br>
+                    <span>Chennai</span>
+                </div>
+                <div class="line"></div>
+                <div class="train-duration">
+                    <span>19h 10m</span>
+                    <br>
+                    <a href="#">View Route</a>
+                </div>
+                <div class="line"></div>
+                <div class="train-destination">
+                    <strong>6:10PM, 19 MAR</strong><br>
+                    <span>Mumbai</span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-info">
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1615</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1430</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1280</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-heading">
+                    <span class="class">3A <span class="tatkal">TATKAL</span></span>
+                    <strong>₹ 1090</strong>
+                </div>
+                <div>
+                    <span class="available">Available 30</span>
+                </div>
+                <span class="cancel">Free Cancelation</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

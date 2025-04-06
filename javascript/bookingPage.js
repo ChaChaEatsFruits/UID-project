@@ -65,6 +65,7 @@ const handleFormData = (e) => {
     // Submitting the form
     form.submit();
     window.confirm("Confirm booking?");
+    window.location.href = `submitPage.html?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}&email=${encodeURIComponent(email)}&date=${encodeURIComponent(date)}&classType=${encodeURIComponent(classType)}`;
 }
 
 // Toggling password visibility

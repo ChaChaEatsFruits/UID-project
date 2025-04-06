@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train Booking</title>
-    <link rel="stylesheet" href="bookingPage.css">
+    <link rel="stylesheet" href="css/bookingPage.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <script src="javascript/fillBookingForm.js" defer></script>
+    <script src="javascript/bookingPage.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
-          <h2 class="logo"><a href="file:///Users/anagha_g/Desktop/demo/home.html">ExpressRail.</a></h2> 
+          <h2 class="logo"><a href="home.html">ExpressRail.</a></h2> 
           <input type="checkbox" id="menu-toggler">
           <label for="menu-toggler" id="hamburger-btn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
@@ -29,7 +32,7 @@
       </header>
     <section class="form-section">    
         <h1 align="center">Book Tickets</h1> 
-        <form action="submitPage.html">
+        <form action="#" id="booking-form">
             <h2>Booking</h2>
             <div class="form-group from">
               <label for="from">From</label>
@@ -70,6 +73,6 @@
             </div>
           </form>
       
-          <script src="bookingPage.js"></script>
+          
 </body>
 </html>

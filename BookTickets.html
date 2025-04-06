@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Tickets</title>
-    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="css/booking.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="javascript/bookTrainSearch.js" defer></script>
+    <script src="javascript/sampleData.js" defer></script>
+    <script src="javascript/bookNowButton.js" defer></script>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <h2 class="logo"><a href="file:///Users/anagha_g/Desktop/demo/home.html">ExpressRail.</a></h2> <!--ADD HOME PAGE HREF HERE-->
+        <h2 class="logo"><a href="home.html">ExpressRail.</a></h2> <!--ADD HOME PAGE HREF HERE-->
         <input type="checkbox" id="menu-toggler">
         <label for="menu-toggler" id="hamburger-btn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
@@ -32,13 +35,14 @@
         <section class="search-section">
           <h1>Book Your Train Tickets</h1>
           <form id="search-form">
-            <input type="text" name="from" placeholder="From" required>
-            <input type="text" name="to" placeholder="To" required>
+            <input type="text" name="from" id="from-city" placeholder="From">
+            <input type="text" name="to" id="to-city" placeholder="To">
             <input type="date" name="date" placeholder="Date" required>
-            <button type="submit">SEARCH</button>
+            <button type="submit" >SEARCH</button>
           </form>
         </section>
-        <section class="results-section" id="results-section">  <!--Sample data displayed-->
+        <section class="results-section" id="results-section">  
+          <!--Sample data displayed-->
         </section>
-        <script src="sampleData.js"></script>
+        
     </main>

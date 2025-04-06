@@ -74,7 +74,7 @@ header a:hover, footer a:hover {
     background-color: #f4f4f4;
     padding: 2rem;
     text-align: center;
-    background: url(banner2.jpg);
+    background: url("../images/banner2.jpg");
     background-size: cover;
 }
 
@@ -91,8 +91,20 @@ header a:hover, footer a:hover {
 
 .search-section form input,
 .search-section form button {
+    margin-top: 5px;
     padding: 0.5rem;
     font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+}
+.search-section form button{
+  border-radius: 10px;
+  border:none;
+  background: linear-gradient(90deg, rgb(34, 26, 179) 0%, rgb(59, 59, 244) 35%, rgba(0,212,255,1) 100%);
+  color:whitesmoke;
+  font-weight:500;
 }
 .search-section form button:hover {
     background-color: #FD384C;
@@ -136,6 +148,9 @@ header a:hover, footer a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.book-button {
+  text-decoration: none;
 }
 
 .book-button:hover {
