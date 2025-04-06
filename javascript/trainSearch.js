@@ -1,8 +1,17 @@
 const form=document.querySelector("#search-form");
 
-
-form.addEventListener("submit",(e=>{
-    e.preventDefault();
+const params = new URLSearchParams(window.location.search);
+const from = params.get("from");
+const to = params.get("to");
+if (from && to) {
+    document.querySelector("#from-city").value = from;
+    document.querySelector("#to-city").value = to;
+    setTimeout(() => {
+        filterTrains();
+    }, 100); // 100ms delay to ensure DOM has rendered all train cards
+    
+}
+function filterTrains(){
     const fromCity=document.querySelector("#from-city").value;
     const toCity=document.querySelector("#to-city").value;
     const trainCards=document.querySelectorAll(".train-card");
@@ -16,4 +25,8 @@ form.addEventListener("submit",(e=>{
             card.style.display="none";
         }
     })
+}
+form.addEventListener("submit",(e=>{
+    e.preventDefault();
+    filterTrains();
 }))

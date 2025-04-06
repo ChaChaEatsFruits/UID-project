@@ -7,6 +7,7 @@
     <title>ExpressRail | Home</title>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="javascript/homeSearch.js" defer></script>
   </head>
   <body>
     <header>
@@ -21,8 +22,8 @@
         </label>
         <ul class="all-links">
           <li><a href="#">Profile</a></li>
-          <li><a href="#">Book Tickets</a></li>
-          <li><a href="#">Train Timings</a></li>
+          <li><a href="BookTickets.html">Book Tickets</a></li>
+          <li><a href="trainSchedule.html">Train Timings</a></li>
           <li><a href="#contact">Contact Us</a></li>
           <li><a href="login.html">Sign In</a></li>
           <li class="join-btn"><a href="registration.html">Sign Up</a></li>
@@ -34,11 +35,11 @@
         <div class="text">
           <h1>Find the train you're <br> looking for, right away</h1>
           <form action="#" class="search-form">
-            <input type="text" placeholder="Enter departure station" required>
-            <input type="text" placeholder="Enter destination" required>
+            <input type="text" placeholder="Enter departure station" id="from" required>
+            <input type="text" placeholder="Enter destination" id="to" required>
           </form>
         </div>
-        <a href="#">SEARCH</a>
+        <a href="#" id="search-btn">SEARCH</a>
       </div>
     </section>
     <section class="contact" id="contact">
