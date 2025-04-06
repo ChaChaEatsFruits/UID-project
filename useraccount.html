@@ -3,106 +3,523 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Account Management</title>
+    <title>Edit Profile | RailExpress</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --success-color: #27ae60;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
+            color: #333;
         }
+        
         .container {
-            background: white;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary-color);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .profile-container {
+            display: flex;
+            margin-top: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .profile-pic {
             text-align: center;
+            margin-bottom: 20px;
+            position: relative;
         }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        
+        .profile-pic img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary-color);
         }
-        input.error {
-            border-color: red;
+        
+        .profile-pic h3 {
+            margin-top: 10px;
+            font-size: 18px;
         }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #be0c24;
+        
+        .change-photo {
+            position: absolute;
+            bottom: 10px;
+            right: calc(50% - 60px);
+            background-color: var(--secondary-color);
             color: white;
             border: none;
-            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        button:hover {
-            background-color: #218838;
+        
+        .nav-menu {
+            list-style: none;
+            margin-top: 30px;
         }
-        .current-details {
-            text-align: left;
+        
+        .nav-menu li {
+            padding: 12px 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-menu li.active {
+            background-color: var(--secondary-color);
+        }
+        
+        .nav-menu li:hover:not(.active) {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .nav-menu li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .profile-content {
+            flex: 1;
+            padding: 30px;
+        }
+        
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        
+        .profile-header h2 {
+            color: var(--primary-color);
+        }
+        
+        .form-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: none;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #c0392b;
+        }
+        
+        .btn-secondary {
+            background-color: #95a5a6;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #7f8c8d;
+        }
+        
+        .btn-success {
+            background-color: var(--success-color);
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background-color: #219653;
+        }
+        
+        .edit-form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .form-group {
             margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 15px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+        }
+        
+        .full-width {
+            grid-column: span 2;
+        }
+        
+        .address-group {
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .changes-saved {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .changes-saved.show {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        
+        .changed-details {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        
+        .changed-details li {
+            margin-bottom: 5px;
+        }
+        
+        .field-changed {
+            position: relative;
+        }
+        
+        .field-changed::after {
+            content: '✓ Changed';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            color: var(--success-color);
+            background-color: rgba(39, 174, 96, 0.1);
+            padding: 2px 5px;
+            border-radius: 3px;
+            display: none;
+        }
+        
+        .field-changed.changed::after {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+            }
+            
+            .edit-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .full-width, .address-group {
+                grid-column: span 1;
+            }
+            
+            .address-group {
+                grid-template-columns: 1fr;
+            }
+            
+            .field-changed::after {
+                position: static;
+                transform: none;
+                display: inline-block;
+                margin-left: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Account Management</h2>
-        <div class="current-details">
-            <p><strong>Current Username:</strong> <span id="current username">admin123</span></p>
-            <p><strong>Current Email:</strong> <span id="current email">admin@example.com</span></p>
-            <p><strong>Current password:</strong> <span id="current password">Admin123</span></p>
+    <header>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="BookTickets.html">Book Tickets</a></li>
+                    <li><a href="useraccount1.html">My Profile</a></li>
+                    
+                </ul>
+            </nav>
         </div>
-        <input type="text" id="username" placeholder="Add new username">
-        <input type="email" id="email" placeholder="Add new email">
-        <input type="password" id="password" placeholder="Add new password">
-        <button onclick="updateAccount()">Update Account</button>
-        <input type="button" ahref="home.html" value="Home">
-        <p id="message"></p>
+    </header>
+    
+    <div class="container">
+        <div class="profile-container">
+            <div class="sidebar">
+                <div class="profile-pic">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="useraccount1.html">Profile Information</a></li>
+                    <li class="active"><a href="edit-profile.html">Edit Profile</a></li>
+             
+                  
+                </ul>
+            </div>
+            
+            <div class="profile-content">
+                <div class="profile-header">
+                    <h2>Edit Profile Information</h2>
+                    <div class="form-actions">
+                        <button class="btn btn-secondary" onclick="window.location.href='profile.html'">Cancel</button>
+                        <button class="btn btn-primary" id="saveChanges">Save Changes</button>
+                    </div>
+                </div>
+                
+                <div class="changes-saved" id="changesSaved">
+                    <strong>✓ Profile updated successfully!</strong>
+                    <div class="changed-details" id="changedDetails">
+                    </div>
+                </div>
+                
+                <form class="edit-form" id="profileForm">
+                    <div class="form-group field-changed" id="firstNameGroup">
+                        <label for="firstName">User Name:</label>
+                        <input type="text" id="firstName" class="form-control" value="John">
+                    </div>
+                    <div >
+                     </div>
+                    
+                    <div class="form-group field-changed" id="lastNameGroup">
+                        <label for="email">E mail</label>
+                        <input type="email" id="email" class="form-control" value="admin@example.com">
+                    </div>
+                    <div>    
+                    </div>
+                    
+                    <div class="form-group field-changed" id="phoneGroup">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" value="+91 9997777140">
+                    </div>
+                    <div>
+                    </div>
+                    
+                    <div class="address-group">  
+                        <div class="form-group field-changed" id="zipGroup">
+                            <label for="zip">Password</label>
+                            <input type="password" id="zip" class="form-control" value="xxxx">
+                        </div>
+                        <div>   
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label>
+                            <input type="checkbox" id="promoEmails" checked> Receive promotional emails and offers
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+
     <script>
-        function updateAccount() {
-            let username = document.getElementById("username");
-            let email = document.getElementById("email");
-            let password = document.getElementById("password");
-            let message = document.getElementById("message");
+        document.addEventListener('DOMContentLoaded', function() {
+            // Store original values
+            const originalValues = {
+                firstName: 'John',
+                middleName: 'Michael',
+                lastName: 'Doe',
+                email: 'john.doe@example.com',
+                phone: '+1 (555) 123-4567',
+                dob: '1985-01-15',
+                street: '123 Main Street',
+                apt: 'Apt 4B',
+                city: 'New York',
+                state: 'NY',
+                zip: '10001',
+                country: 'US',
+                promoEmails: true
+            };
             
-            let usernameValue = username.value.trim();
-            let emailValue = email.value.trim();
-            let passwordValue = password.value.trim();
+            // Track changes
+            const form = document.getElementById('profileForm');
+            const inputs = form.querySelectorAll('input, select');
             
-            username.classList.remove("error");
-            email.classList.remove("error");
-            password.classList.remove("error");
+            inputs.forEach(input => {
+                input.addEventListener('change', function() {
+                    const fieldId = this.id;
+                    const groupId = fieldId + 'Group';
+                    const groupElement = document.getElementById(groupId);
+                    
+                    // For checkboxes, compare the checked state
+                    if (this.type === 'checkbox') {
+                        if (this.checked !== originalValues[fieldId]) {
+                            groupElement.classList.add('changed');
+                        } else {
+                            groupElement.classList.remove('changed');
+                        }
+                    } 
+                    // For other inputs, compare the value
+                    else {
+                        if (this.value !== originalValues[fieldId]) {
+                            groupElement.classList.add('changed');
+                        } else {
+                            groupElement.classList.remove('changed');
+                        }
+                    }
+                });
+            });
             
-            if (!usernameValue || !emailValue || !passwordValue) {
-                message.innerText = "Please fill in all fields.";
-                message.style.color = "red";
-                if (!usernameValue) username.classList.add("error");
-                if (!emailValue) email.classList.add("error");
-                if (!passwordValue) password.classList.add("error");
-                return;
-            }
+            // Save changes button
+            document.getElementById('saveChanges').addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const changedDetails = [];
+                const changedFields = form.querySelectorAll('.field-changed.changed');
+                
+                changedFields.forEach(field => {
+                    const input = field.querySelector('input, select');
+                    const label = field.querySelector('label').textContent.trim();
+                    let value = input.value;
+                    
+                    if (input.type === 'checkbox') {
+                        value = input.checked ? 'Yes' : 'No';
+                    } else if (input.type === 'select-one') {
+                        const selectedOption = input.options[input.selectedIndex];
+                        value = selectedOption.text;
+                    }
+                    
+                    changedDetails.push(`<li><strong>${label}:</strong> ${value}</li>`);
+                });
+                
+                if (changedDetails.length > 0) {
+                    document.getElementById('changedDetails').innerHTML = changedDetails.join('');
+                    document.getElementById('changesSaved').classList.add('show');
+                    
+                    // Hide the success message after 5 seconds
+                    setTimeout(() => {
+                        document.getElementById('changesSaved').classList.remove('show');
+                    }, 5000);
+                    
+                    // Update original values to the new ones
+                    inputs.forEach(input => {
+                        const fieldId = input.id;
+                        if (input.type === 'checkbox') {
+                            originalValues[fieldId] = input.checked;
+                        } else {
+                            originalValues[fieldId] = input.value;
+                        }
+                    });
+                    
+                    // Remove changed classes
+                    changedFields.forEach(field => {
+                        field.classList.remove('changed');
+                    });
+                }
+            });
             
-            let passwordPattern = /^(?=.*[A-Z])(?=.*\d).+$/;
-            if (!passwordPattern.test(passwordValue)) {
-                alert("Password must contain at least one uppercase letter and one number.");
-                password.classList.add("error");
-                return;
-            }
-            
-            let confirmation = confirm("Are you sure you want to update your details?");
-            if (confirmation) {
-                document.getElementById("current-username").innerText = usernameValue;
-                document.getElementById("current-email").innerText = emailValue;
-                message.innerText = "Account updated successfully!";
-                message.style.color = "green";
-            }
-        }
+            // Initialize checkbox value
+            document.getElementById('promoEmails').checked = originalValues.promoEmails;
+        });
     </script>
 </body>
 </html>
