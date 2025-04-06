@@ -86,7 +86,7 @@ function checkUserLogin(email,password){
         alert('Logged In Successfully!');
         localStorage.setItem('currentUser',JSON.stringify(email));
         localStorage.setItem('isLoggedIn',true);
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     }
     else{
         alert('Invalid Credentials');
