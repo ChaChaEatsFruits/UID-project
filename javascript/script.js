@@ -1,7 +1,4 @@
-function goIndex(){
 
-    window.location.href="home.html";
-}
 function registerUser() {
     let username = document.getElementById("username").value;
     let email = document.getElementById("email").value;
@@ -15,7 +12,6 @@ function registerUser() {
 }
 
 function goLogin(){
-    
     window.location.href="login.html";
 }
 function goRegister(){

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <script src="javascript/homeSearch.js" defer></script>
+    <script src="javascript/checkLogin.js" defer></script>
   </head>
   <body>
     <header>
@@ -21,12 +22,12 @@
           </svg>
         </label>
         <ul class="all-links">
-          <li><a href="#">Profile</a></li>
+          <li class="logged-in"><a href="#">Profile</a></li>
           <li><a href="BookTickets.html">Book Tickets</a></li>
           <li><a href="trainSchedule.html">Train Timings</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li><a href="login.html">Sign In</a></li>
-          <li class="join-btn"><a href="registration.html">Sign Up</a></li>
+          <li class="not-logged-in"><a href="login.html">Sign In</a></li>
+          <li class="join-btn not-logged-in"><a href="registration.html">Sign Up</a></li>
         </ul>
       </nav>
     </header>

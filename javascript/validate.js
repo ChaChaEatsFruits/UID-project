@@ -84,7 +84,9 @@ function checkUserLogin(email,password){
     var users=JSON.parse(localStorage.getItem('users'))|| [];
     if (users.some(user=>user.email===email && user.password===password)){
         alert('Logged In Successfully!');
-        window.location.href = "index.html";
+        localStorage.setItem('currentUser',JSON.stringify(email));
+        localStorage.setItem('isLoggedIn',true);
+        window.location.href = "home.html";
     }
     else{
         alert('Invalid Credentials');
