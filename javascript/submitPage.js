@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+  window.focus();
   const params = new URLSearchParams(window.location.search);
   document.getElementById("confirm-from").innerText = params.get("from") || "N/A";
   document.getElementById("confirm-to").innerText = params.get("to") || "N/A";

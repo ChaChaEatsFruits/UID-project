@@ -1,3 +1,4 @@
+window.focus();
 const trainCards = document.querySelectorAll(".train-card");
 
 trainCards.forEach((card) => {
@@ -8,6 +9,6 @@ trainCards.forEach((card) => {
         const to = card.querySelector("#to").textContent.trim();
 
         // Pass the data through URL parameters
-        window.location.href = `bookingPage.html?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}`;
+        window.location.assign(`bookingPage.html?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}`);
     });
 });

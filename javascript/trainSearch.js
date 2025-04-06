@@ -1,5 +1,5 @@
 const form=document.querySelector("#search-form");
-
+window.focus();
 const params = new URLSearchParams(window.location.search);
 const from = params.get("from");
 const to = params.get("to");

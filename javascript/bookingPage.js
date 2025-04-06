@@ -1,3 +1,4 @@
+window.focus();
 // Selecting form and input elements
 const form = document.querySelector("form");
 // const passwordInput = document.getElementById("password");
@@ -65,7 +66,7 @@ const handleFormData = (e) => {
     // Submitting the form
     form.submit();
     window.confirm("Confirm booking?");
-    window.location.href = `submitPage.html?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}&email=${encodeURIComponent(email)}&date=${encodeURIComponent(date)}&classType=${encodeURIComponent(classType)}`;
+    window.location.assign(`submitPage.html?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}&email=${encodeURIComponent(email)}&date=${encodeURIComponent(date)}&classType=${encodeURIComponent(classType)}`);
 }
 
 // Toggling password visibility

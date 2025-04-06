@@ -1,3 +1,4 @@
+window.focus();
 const allStar = document.querySelectorAll('.rating .star');
 const ratingValue = document.querySelector('.rating input');
 const form = document.querySelector('#form');

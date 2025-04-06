@@ -1,4 +1,4 @@
-
+window.focus();
 function registerUser() {
     let username = document.getElementById("username").value;
     let email = document.getElementById("email").value;
@@ -12,10 +12,10 @@ function registerUser() {
 }
 
 function goLogin(){
-    window.location.href="login.html";
+    window.location.assign("login.html");
 }
 function goRegister(){
     
-    window.location.href="registration.html";
+    window.location.assign("registration.html");
 }
 

@@ -1,6 +1,6 @@
 
 
-
+window.focus();
 const sampleData = [
   {
     trainName: "Express 101",

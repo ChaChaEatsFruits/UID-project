@@ -4,6 +4,7 @@ const emailInput=document.getElementById('email');
 const phoneInput=document.getElementById('phone');
 const passwordInput=document.getElementById('password');
 const confirmPasswordInput=document.getElementById('confirm_password');
+window.focus();
 
 form.addEventListener('submit',(e)=>{
     let errors=[];
@@ -86,7 +87,7 @@ function checkUserLogin(email,password){
         alert('Logged In Successfully!');
         localStorage.setItem('currentUser',JSON.stringify(email));
         localStorage.setItem('isLoggedIn',true);
-        window.location.href = "index.html";
+        window.location.assign("index.html");
     }
     else{
         alert('Invalid Credentials');

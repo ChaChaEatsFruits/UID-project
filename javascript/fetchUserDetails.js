@@ -1,3 +1,4 @@
+window.focus();
 const currentUserEmail = JSON.parse(localStorage.getItem("currentUser"));
 const users = JSON.parse(localStorage.getItem("users"));
 

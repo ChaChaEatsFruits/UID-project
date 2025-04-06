@@ -1,3 +1,4 @@
+window.focus();
 window.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
 

@@ -1,3 +1,4 @@
+window.focus();
 const checkLogin=JSON.parse(localStorage.getItem('isLoggedIn'));
 if (checkLogin){
     document.querySelectorAll(".not-logged-in").forEach(item=>item.style.display="none");
@@ -10,5 +11,5 @@ else{
 document.querySelector(".log-out").addEventListener('click',()=>{
     localStorage.setItem('isLoggedIn',false);
     localStorage.removeItem('currentUser');
-    window.location.href="index.html";
+    window.location.assign("index.html");
 })
