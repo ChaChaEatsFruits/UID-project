@@ -1,12 +1,8 @@
-const trainCard = document.createElement("div");
-      trainCard.className = "train-card";
-
-      trainCard.innerHTML = `
-      <div class="train-info">
-        <h2>${train.trainName}</h2>
-        <p><strong>From:</strong> ${train.from} | <strong>To:</strong> ${train.to}</p>
-        <p><strong>Departure:</strong> ${train.departure} | <strong>Arrival:</strong> ${train.arrival}</p>
-        <p><strong>Availability:</strong> ${train.availability}</p>
-      </div>
-      <a href="bookingPage.html" class="book-button">Book Now</a>
-    `;
+document.addEventListener("DOMContentLoaded", function() {
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById("confirm-from").innerText = params.get("from") || "N/A";
+  document.getElementById("confirm-to").innerText = params.get("to") || "N/A";
+  document.getElementById("confirm-email").innerText = params.get("email") || "N/A";
+  document.getElementById("confirm-date").innerText = params.get("date") || "N/A";
+  document.getElementById("confirm-class").innerText = params.get("classType") || "N/A";
+});

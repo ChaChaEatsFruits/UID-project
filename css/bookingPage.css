@@ -184,9 +184,13 @@ form .password i {
     color: #456073;
 }
 .confirmation-section .details-container {
-    display: block;
     font-size: 15px;
     margin-bottom: 7px;
+}
+.confirmation-section .details-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .confirmation-section .details-container .button a {
     border: 1px solid #fff;
@@ -197,4 +201,19 @@ form .password i {
     color: #fff;
     border-color: transparent;
     background: #FD384C;
+}
+.home-btn{
+    margin-top: 8px;
+    padding:7px;
+    background: royalblue;
+    color:white;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    font-weight: 500;;
+    font-size: 16px;
+    cursor: pointer;
+}
+.home-btn:hover{
+    background-color:slateblue;
 }
