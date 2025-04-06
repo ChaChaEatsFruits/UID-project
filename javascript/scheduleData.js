@@ -438,7 +438,7 @@ resultsSection.innerHTML = ""; // Clear previous results
 sampleData.forEach((train) => {
     const trainCard = document.createElement("div");
     trainCard.className = "train-card";
-
+    const trainDuration=getTimeDifference(train.departure,train.arrival);
     trainCard.innerHTML = `
         <div class="train-info">
             <div class="train-name">
@@ -453,9 +453,9 @@ sampleData.forEach((train) => {
                 </div>
                 <div class="line"></div>
                 <div class="train-duration">
-                    <span>6h 25m</span>
+                    <span>${trainDuration}</span>
                     <br>
-                    <a href="#">View Route</a>
+                    
                 </div>
                 <div class="line"></div>
                 <div class="train-destination">
@@ -468,7 +468,38 @@ sampleData.forEach((train) => {
         </div>
     `
     resultsSection.appendChild(trainCard);
-;});
+});
+
+function getTimeDifference(startTime, endTime) {
+  // Convert time strings to Date objects (using today’s date as reference)
+  const formatTime = timeStr => {
+      const [time, modifier] = timeStr.split(" ");
+      let [hours, minutes] = time.split(":").map(Number);
+
+      if (modifier === "PM" && hours !== 12) hours += 12;
+      if (modifier === "AM" && hours === 12) hours = 0;
+
+      const date = new Date();
+      date.setHours(hours, minutes, 0, 0);
+      return date;
+  };
+
+  const start = formatTime(startTime);
+  const end = formatTime(endTime);
+
+  // If end is earlier than start (i.e., crosses midnight), add 1 day
+  if (end <= start) {
+      end.setDate(end.getDate() + 1);
+  }
+
+  const diffMs = end - start;
+  const diffMins = Math.floor(diffMs / 60000);
+  const hours = Math.floor(diffMins / 60);
+  const minutes = diffMins % 60;
+
+  return `${hours}h ${minutes}m`;
+}
+
 
   
   

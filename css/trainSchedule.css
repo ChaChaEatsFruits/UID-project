@@ -77,9 +77,10 @@ form{
     border-radius: 5px;
     color:aliceblue;
     border:none;
+    cursor:pointer; 
 }
 
-.header .search-button:hover {
+.header .search-button{
     cursor:pointer; 
     outline: auto;
 }
@@ -164,7 +165,8 @@ form{
 .train-duration{
     flex:1;
     text-align: center;
-    color:rgb(104, 103, 103)
+    color:rgb(104, 103, 103);
+    margin:0px 4px 0px 4px;
 }
 .train-duration a{
     text-decoration:none;
